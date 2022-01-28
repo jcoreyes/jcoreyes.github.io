@@ -144,7 +144,7 @@
               <a href="https://people.eecs.berkeley.edu/~nrhinehart/">Nick Rhinehart</a>,
               <a href="">Jenny Wang</a>,
               <a href="https://people.eecs.berkeley.edu/~gberseth/">Glen Berseth</a>,
-              <strong>John D. Co-Reyes*</strong>,
+              <strong>John D. Co-Reyes</strong>,
               <a href="https://danijar.com/">Danijar Hafner</a>,
               <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
@@ -160,7 +160,49 @@
             </td>
           </tr>
 
-                  <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='porlight_image'>
+                <img src='images/darts.png'; style='height: 100%; width: 100%; object-fit: contain' ></div>
+                <img src='images/darts.png'; style='height: 100%; width: 100%; object-fit: contain'>
+              </div>
+              <script type="text/javascript">
+                function porlight_start() {
+                  document.getElementById('porlight_image').style.opacity = "1";
+                }
+
+                function porlight_stop() {
+                  document.getElementById('porlight_image').style.opacity = "0";
+                }
+                porlight_stop()
+              </script>
+            </td>
+
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/abs/2106.02229">
+                <papertitle>RL-DARTS: Differentiable Architecture Search for Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/yingjiemiao/">Yingjie Miao</a>,
+              <a href="https://xingyousong.github.io/">Xingyou Song</a>,
+              <a href="http://daiyip.com/">Daiyi Peng</a>,
+              <a href="https://www.linkedin.com/in/yutingyue/">Summer Yue</a>,
+              <strong>John D. Co-Reyes</strong>,
+
+              <a href="https://ebrevdo.github.io/">Eugene Brevdo</a>,
+              <a href="https://www.afaust.info/">Aleksandra Faust</a>
+              <br>
+              <em>arXiv</em>, 2021
+              <p></p>
+              </p>
+              <p> Recently, Differentiable Architecture Search (DARTS) has become one of the most popular Neural Architecture Search (NAS) methods successfully applied in supervised learning (SL). However, its applications in other domains, in particular for reinforcement learning (RL), has seldom been studied. This is due in part to RL possessing a significantly different optimization paradigm than SL, especially with regards to the notion of replay data, which is continually generated via inference in RL. In this paper, we introduce RL-DARTS, one of the first applications of end-to-end DARTS in RL to search for convolutional cells, applied to the challenging, infinitely procedurally generated Procgen benchmark. We demonstrate that the benefits of DARTS become amplified when applied to RL, namely search efficiency in terms of time and compute, as well as simplicity in integration with complex preexisting RL code via simply replacing the image encoder with a DARTS supernet, compatible with both off-policy and on-policy RL algorithms. At the same time however, we provide one of the first extensive studies of DARTS outside of the standard fixed dataset setting in SL via RL-DARTS. We show that throughout training, the supernet gradually learns better cells, leading to alternative architectures which can be highly competitive against manually designed policies, but also verify previous design choices for RL policies.
+              </p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
             <td width="25%">
               <div class="one">
                 <div class="two" id='porlight_image'>
